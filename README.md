@@ -11,7 +11,7 @@ this web app has been created with HTML and CSS.
 
 ## support
 
-For support, email info@buny.xyz
+For support, email book@buny.co
 
 
                                                                                                     

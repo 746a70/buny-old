@@ -15,15 +15,13 @@
   <h1>buny</h1>
   <p><a href="mailto:book@buny.co">contact</a></p>
   <br>
-  <h2>|| latest</h2>
-  <br>
-  <a href="https://bunyy.bandcamp.com/album/rmx01"><img src="images/IMG_8906.jpeg" width="150"></a>
-  <p><a href="https://bunyy.bandcamp.com/album/rmx01">rmx01</a></p>
-  <p><a href="https://soundcloud.com/djbuny/on-the-road-buny-rmx/s-XpoonLM75UW?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=44f1acb6713e4676865a0c9f13a64036">a. on the road (buny rmx) - ac slater, devyn sawyer</a></p>
-  <p><a href="https://soundcloud.com/djbuny/starlight-buny-rmx/s-vPjtQ00aen2?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=928f6fcc93a74ac3be852cdb30c090cc">b. starlight (buny rmx) - danny l harle, pinkpantheress</a></p>
-  <h2> available now on soundcloud + bandcamp </h2>
-  <br>
-  <br>
+  {% for show in site.data.shows %}
+  <a href="{{ show.link }}">
+    <p>
+      {{ show.title }} — {{ show.date }} — {{ show.location }}
+    </p>
+  </a>
+{% endfor %}
   <h3><a href="shows.html">past shows</a></h3>
   <br>
   <br>
